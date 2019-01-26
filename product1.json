@@ -1,0 +1,15 @@
+{
+  "productId": 1,
+  "productName": "An ice peak",
+  "price": 99.9,
+  "tags": [ "ice", "peak" ],
+  "dimension": {
+    "heigth": 10,
+    "width": 0.1,
+    "length": 1
+  },
+  "warehouseLocation":{
+    "latitude": 30.08,
+    "longitude": 102.4
+  }
+}
