@@ -1,0 +1,23 @@
+{
+  "name": "pkg",
+  "version": "1.0.0",
+  "description": "json schema tests",
+  "main": "index.js",
+  "dependencies": {
+    "ajv": "^6.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LisaRivalin/JSON-Schema-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LisaRivalin/JSON-Schema-test/issues"
+  },
+  "homepage": "https://github.com/LisaRivalin/JSON-Schema-test#readme"
+}
