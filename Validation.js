@@ -1,6 +1,14 @@
+const UserSchema = require('/home/lisa/Projects/JSON-Schema-test/product example with reference/schema-example1.json')
+const UserData = require('/home/lisa/Projects/JSON-Schema-test/product example with reference/product1.json')
+const reference = require('/home/lisa/Projects/JSON-Schema-test/product example with reference/geographical-location-schema.json')
+
 var Ajv = require('ajv')
 var ajv = Ajv({ allErrors: true })
-var valid = ajv.validate('/home/lisa/Projects/JSON-Schema-test/product example without reference/schema-example1.json', '/home/lisa/Projects/JSON-Schema-test/product example without reference/product2.json')
+
+var validate = ajv.addSchema(reference).compile(UserSchema)
+
+var valid = validate(UserData)
+
 if (valid) {
   console.log('User data is valid')
 } else {
