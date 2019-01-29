@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "file:///home/lisa/Projects/JSON-Schema-test/schema-example1.json",
+  "$id": "https://raw.githubusercontent.com/LisaRivalin/JSON-Schema-test/master/product%20example%20with%20reference/schema-example1.json",
   "title": "Product",
   "description": "A product from Acme's catalog",
   "type": "object",
@@ -27,25 +27,24 @@
       "minItems": 1,
       "uniqueItems": true
     },
-    "dimensions":{
-      "description": "dimension of the product",
+    "dimensions": {
       "type": "object",
-      "properties":{
-        "length":{
+      "properties": {
+        "length": {
           "type": "number"
         },
-        "width":{
+        "width": {
           "type": "number"
         },
-        "heigth":{
+        "height": {
           "type": "number"
         }
       },
-      "required": [ "length", "width", "heigth" ]
+      "required": [ "length", "width", "height" ]
     },
-    "warehouseLocation":{
-      "description": "Coordinates of the warehouse where the product is located",
-      "$ref": "file:///home/lisa/Projects/JSON-Schema-test/geographical-location-schema.json"
+    "warehouseLocation": {
+      "description": "Coordinates of the warehouse where the product is located.",
+      "$ref": "https://raw.githubusercontent.com/LisaRivalin/JSON-Schema-test/master/product%20example%20with%20reference/geographical-location-schema.json"
     }
   },
   "required": [ "productId", "productName", "price" ]
